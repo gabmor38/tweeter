@@ -1,0 +1,73 @@
+.new-tweet {
+  margin-top: 16px;
+}
+
+textarea{
+  display:flex;
+  margin-top:16px;
+  width: 100%;
+  background-color: transparent;
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-width: 2px;
+}
+
+button {
+background-color: royalblue;
+border-radius: 5px;
+color: white;
+margin-top: 16px;
+}
+
+div {
+  display: flex;
+  align-items:flex-end;
+  justify-content: space-between;
+  flex-direction: row;
+  align-content: right;
+}
+
+.counter{
+  font-weight: bold;
+  color:black;
+}
+.negativeNum {
+  color: red;
+}
+article.tweet {
+  margin-top:1.5em;
+  padding:16px;
+  border: 2px solid black;
+}
+
+article.tweet header{
+  display:flex;
+  flex-direction:row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.moveLeft {
+  flex-basis: 75%;
+}
+
+article.tweet footer{
+  display:flex;
+  flex-direction:row;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.grow {
+  flex-grow: 1;
+}
+
+.tweet:hover {
+  box-shadow: 10px 10px gray;
+}
+
+i:hover{
+  color: fuchsia;
+  cursor: pointer;
+}

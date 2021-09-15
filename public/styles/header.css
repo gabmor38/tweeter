@@ -1,0 +1,19 @@
+.header {
+  z-index: 0;
+  height: 400px;
+  width: auto;
+  margin-top:120px;
+  background-color: #dbd164;
+  background-image: url("https://www.transparenttextures.com/patterns/diagmonds-light.png");
+}
+
+img.avatar {
+  margin: auto;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+}
+
+.name {
+  justify-content: space-evenly;
+}
