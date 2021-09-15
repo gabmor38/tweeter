@@ -54,11 +54,13 @@ const time = timeago.format(`${data.created_at}`)
 const  $tweet = `
 <article class="tweet">
         <header>
-          <img src=${data.user.avatars} width="40";>
-          <p class="moveLeft">${data.user.name}</p>
-          <p>${data.user.handle}</p>
+          <div>
+          <img src=${data.user.avatars} width="40" ;>
+          <p class="moveLeft name">${data.user.name}</p>
+          </div>
+          <p class="lightgrayHandle">${data.user.handle}</p>
         </header>
-        <div class="input article.tweet">${data.content.text}</div>
+        <div class="input">${data.content.text}</div>
         <footer>
           <p class="timeAgo">${time}</p>
           <p>

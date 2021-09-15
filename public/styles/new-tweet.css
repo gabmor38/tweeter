@@ -22,7 +22,7 @@ margin-top: 16px;
 
 div {
   display: flex;
-  align-items:flex-end;
+  align-items:center;
   justify-content: space-between;
   flex-direction: row;
   align-content: right;
@@ -46,6 +46,7 @@ article.tweet header{
   flex-direction:row;
   justify-content: space-between;
   align-items: center;
+  
 }
 
 .moveLeft {
@@ -70,4 +71,18 @@ article.tweet footer{
 i:hover{
   color: fuchsia;
   cursor: pointer;
+}
+
+.input {
+  border-bottom: 2px solid black;
+  padding: 5px 0px 5px 0px;
+}
+
+.name {
+padding-right:10px;
+padding-left:10px;
+}
+
+.lightgrayHandle {
+color:lightgray;
 }
