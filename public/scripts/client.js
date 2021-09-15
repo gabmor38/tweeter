@@ -58,7 +58,7 @@ const  $tweet = `
           <p class="moveLeft">${data.user.name}</p>
           <p>${data.user.handle}</p>
         </header>
-        <div class="input">${data.content.text}</div>
+        <div class="input article.tweet">${data.content.text}</div>
         <footer>
           <p class="timeAgo">${time}</p>
           <p>
