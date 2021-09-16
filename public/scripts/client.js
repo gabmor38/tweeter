@@ -5,7 +5,11 @@
  */
 // Fake data taken from initial-tweets.json
 
+// const { json } = require("body-parser");
+
 $(document).ready(()=> {
+
+
 const data = [
   {
     "user": {
@@ -30,6 +34,7 @@ const data = [
     "created_at": 1461113959088
   }
 ]
+
 
 const renderTweets = function(data) {
 // loops through tweets
@@ -76,15 +81,19 @@ return $tweet;
 
 renderTweets(data);
 
-// $(document).ready(function() {
-// console.log("it is listening")
-// //EventLister for  input of text into text area
 
-// $('submit').on('click', () => {
-//   const $input = $('#tweet-text').val();
-//   $('.input').append(`<p>${$input}</p>`)
-  
+$("button:submit").click(function(event) {
+    event.preventDefault();
+    
+    const form = $('form')
+    const serializedData = $(form).serialize();
+      //console.log("hello string",serializedData);
 
-// })
+    $.post( '/tweets', serializedData).then((res) => {
+      //console.log(res);
+    
+    });
+    
+  });
 
 });
