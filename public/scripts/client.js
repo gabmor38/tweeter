@@ -9,6 +9,13 @@
 
 $(document).ready(()=> {
 
+  //function to escape text strings when user enters their input.
+  const escape = function (str) {
+    let div = document.createElement("div");
+    div.appendChild(document.createTextNode(str));
+    return div.innerHTML;
+  };
+
 
 const renderTweets = function(data) {
 // loops through tweets
@@ -20,6 +27,8 @@ const renderTweets = function(data) {
     $tweetsContainer.prepend($tweet);
   }
 }
+
+
 // takes return value and appends it to the tweets container
 const createTweetElement = function(data) {
   /* Your code for creating the tweet element */
@@ -35,7 +44,7 @@ const  $tweet = `
           </div>
           <p class="lightgrayHandle">${data.user.handle}</p>
         </header>
-        <div class="input">${data.content.text}</div>
+        <div class="input">${escape(data.content.text)}</div>
         <footer>
           <p class="timeAgo">${time}</p>
           <p>
@@ -85,3 +94,4 @@ $('#tweet-form').submit(function(event) {
   });
 
 });
+
