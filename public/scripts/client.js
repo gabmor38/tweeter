@@ -10,32 +10,6 @@
 $(document).ready(()=> {
 
 
-// const data = [
-//   {
-//     "user": {
-//       "name": "Newton",
-//       "avatars": "https://i.imgur.com/73hZDYK.png"
-//       ,
-//       "handle": "@SirIsaac"
-//     },
-//     "content": {
-//       "text": "If I have seen further it is by standing on the shoulders of giants"
-//     },
-//     "created_at": 1461116232227
-//   },
-//   {
-//     "user": {
-//       "name": "Descartes",
-//       "avatars": "https://i.imgur.com/nlhLi3I.png",
-//       "handle": "@rd" },
-//     "content": {
-//       "text": "Je pense , donc je suis"
-//     },
-//     "created_at": 1461113959088
-//   }
-// ]
-
-
 const renderTweets = function(data) {
 // loops through tweets
 
@@ -45,12 +19,8 @@ const renderTweets = function(data) {
     const $tweet = createTweetElement(tweet);
     $tweetsContainer.append($tweet);
   }
-
-
-
-// takes return value and appends it to the tweets container
 }
-
+// takes return value and appends it to the tweets container
 const createTweetElement = function(data) {
   /* Your code for creating the tweet element */
 // ...
@@ -79,23 +49,6 @@ const  $tweet = `
 return $tweet;
 }
 
-renderTweets(data);
-
-
-$("button:submit").click(function(event) {
-    event.preventDefault();
-    
-    const form = $('form')
-    const serializedData = $(form).serialize();
-      //console.log("hello string",serializedData);
-
-    $.post( '/tweets', serializedData).then((res) => {
-      //console.log(res);
-    
-    });
-    
-  });
-
 // FETCH THE TWEETS//
 
   const loadTweets = function() {
@@ -105,9 +58,30 @@ $("button:submit").click(function(event) {
       renderTweets(res);
 
     });
+  };
 
-  
+//stuff that runs automatically  
+loadTweets()
 
-  }
+$('#tweet-form').submit(function(event) {
+    event.preventDefault();
+    
+    const $form = $('#tweet-form');
+    const serializedData = $form.serialize();
+     console.log(serializedData)
+    // form validation//
+    if(serializedData.length <= 5) {
+      alert("Enter a tweet");
+      return
+    } else if(($('.counter').val() <= 0)){
+      alert("Your tweet is too long");
+      return
+    }
+    $.post( '/tweets', serializedData).then((res) => {
+      //console.log(res);
+      loadTweets();
+    });
+    
+  });
 
 });
