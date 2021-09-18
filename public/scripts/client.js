@@ -80,11 +80,12 @@ $('#tweet-form').submit(function(event) {
      console.log(serializedData)
     // form validation//
     if(serializedData.length <= 5) {
-      alert("Enter a tweet");
-      return
+      return $('.error').css("visibility","visible").text('Enter a tweet');
+      //$('.error').slideDown("Enter a tweet");
+      
     } else if(($('.counter').val() <= 0)){
-      alert("Your tweet is too long");
-      return
+      return $('.error').css("visibility","visible").text('Your tweet is too long');
+      
     }
     $.post( '/tweets', serializedData).then((res) => {
       //console.log(res);

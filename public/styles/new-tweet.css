@@ -86,3 +86,16 @@ padding-left:10px;
 .lightgrayHandle {
 color:lightgray;
 }
+
+.error {
+  position: relative; 
+  visibility: hidden;
+  display: inline-block !important;
+  color: red;
+  border: 5px solid #c51244 !important;
+  border-radius: 3px !important;
+  padding: 10px !important;
+  box-shadow: 1px 1px 1px #aaaaaa;
+  margin-top: 10px;
+  width:100%;
+}
