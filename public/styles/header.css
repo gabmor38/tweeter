@@ -1,4 +1,7 @@
 .header {
+  display:flex;
+  flex-direction: column;
+  justify-content: flex-end;
   z-index: 0;
   height: 400px;
   width: auto;
@@ -16,4 +19,17 @@ img.avatar {
 
 .name {
   justify-content: space-evenly;
+}
+
+@media only screen and (min-width: 1024px) {
+
+  .header {
+    z-index: 0;
+    align-items: center;
+    width: 50%;
+    margin-left:20px;
+    background-color: #dbd164;
+    background-image: url("https://www.transparenttextures.com/patterns/diagmonds-light.png");
+  }
+
 }

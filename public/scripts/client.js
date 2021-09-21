@@ -79,14 +79,15 @@ $('#tweet-form').submit(function(event) {
     const serializedData = $form.serialize();
      console.log(serializedData)
     // form validation//
-    if(serializedData.length <= 5) {
-      return $('.error').css("visibility","visible").text('Enter a tweet');
+    if (!$.trim($('#tweet-text').val())){
+      return $('.error').css("visibility","visible").text('⚠︁  Enter a tweet  ⚠︁');
       //$('.error').slideDown("Enter a tweet");
       
-    } else if(($('.counter').val() <= 0)){
-      return $('.error').css("visibility","visible").text('Your tweet is too long');
-      
+    } else if(($('.counter').val() < 0)){
+      return $('.error').css("visibility","visible").text('⚠︁  Your tweet is too long  ⚠︁');
     }
+    $('.error').attr("style","visibility: hidden");
+
     $.post( '/tweets', serializedData).then((res) => {
       //console.log(res);
       loadTweets();

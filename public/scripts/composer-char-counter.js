@@ -2,7 +2,7 @@ $(document).ready(function() {
   // --- our code goes here ---
 
   // add eventhandles in the textarea id=tweet-text
-  $('#tweet-text').on('keydown', function() {
+  $('#tweet-text').on('keyup', function() {
     maxChar = 140;
     let count = $('.counter');
     let charUsed = $(this).val().length;
