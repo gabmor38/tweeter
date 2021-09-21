@@ -5,7 +5,7 @@
   margin-top: 16px;
 }
 
-textarea{
+textarea {
   display:flex;
   margin-top:16px;
   width: 100%;
@@ -31,7 +31,7 @@ div {
   align-content: right;
 }
 
-.counter{
+.counter {
   font-weight: bold;
   color:black;
 }
@@ -44,7 +44,7 @@ article.tweet {
   border: 2px solid black;
 }
 
-article.tweet header{
+article.tweet header {
   display:flex;
   flex-direction:row;
   justify-content: space-between;
@@ -56,7 +56,7 @@ article.tweet header{
   flex-basis: 75%;
 }
 
-article.tweet footer{
+article.tweet footer {
   display:flex;
   flex-direction:row;
   justify-content: space-between;
@@ -73,7 +73,7 @@ article.tweet footer{
   box-shadow: 10px 10px gray;
 }
 
-i:hover{
+i:hover {
   color: fuchsia;
   cursor: pointer;
 }
@@ -116,7 +116,7 @@ i:hover{
     align-content: right;
   }
   
-  textarea{
+  textarea {
     display:flex;
     margin-top:16px;
     width: 100%;
@@ -140,21 +140,19 @@ i:hover{
     border: 2px solid black;
   }
   
-  article.tweet header{
+  article.tweet header {
     display:flex;
     flex-direction:row;
     justify-content: space-between;
     align-items: center;
     
   }
-  article.tweet footer{
+  article.tweet footer {
     display:flex;
     flex-direction:row;
     justify-content: space-between;
     align-items: baseline;
   }
 
-
 }
-
 

@@ -10,19 +10,21 @@ nav {
   font-family: 'source-sans-pro', sans-serif;
 }
 
-nav span{
+nav span {
   font-family: 'bungee';
   color: #ffff;
   padding: 16px;
   flex-grow: 1;
   align-self: flex-end;
 }
+
 .nav_p {
   display: flex;
   flex-direction: column;
   align-items: center;
   color:#ffff;
 }
+
 .icon {
   color:red;
 }

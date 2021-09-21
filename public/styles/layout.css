@@ -22,8 +22,6 @@ html {
   font-family: "Source Sans Pro", sans-serif;
 }  
 
-
-
 .nav {
   font-family: "bungee", sans-serif;
 }
@@ -50,15 +48,8 @@ footer{
   .container{
     margin-top:120px;
   }
-  
+
   footer{
     height:50px;
   }
 }
-
-
-
-
-/*
- * Additional CSS can be defined below or in other CSS files, as per instructions
- */
