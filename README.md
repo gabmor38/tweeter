@@ -23,3 +23,11 @@ This repository is the starter code for the project: Students will fork and clon
 - Express
 - Node 5.10.x or above
 
+## How to use Tweeter
+
+# Compose a Tweet
+
+1. Select the text are in the "Compose Tweet" section.
+2. Compose your tweet no longer than 140 characters maximum.
+3. Click on the tweet button.
+4. Your tweet will appear at the top of the tweets.
