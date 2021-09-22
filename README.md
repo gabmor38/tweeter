@@ -25,7 +25,7 @@ This repository is the starter code for the project: Students will fork and clon
 
 ## How to use Tweeter
 
-# Compose a Tweet
+### Compose a Tweet
 
 1. Select the text are in the "Compose Tweet" section.
 2. Compose your tweet no longer than 140 characters maximum.
