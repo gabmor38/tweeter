@@ -6,6 +6,7 @@ This repository is the starter code for the project: Students will fork and clon
 
 ## Screenshots
 !["Screenshot of entire page"](https://github.com/gabmor38/tweeter/blob/master/public/docs/tweets%20main.png?raw=true)
+
 !["Screenshot of tweeter box"](https://github.com/gabmor38/tweeter/blob/master/public/docs/Tweet-box.png?raw=true)
 
 ## Getting Started
