@@ -1,13 +1,15 @@
 # Tweeter Project
 
-Tweeter is a simple, single-page Twitter clone  Users are able to post messages of up to 140 characters. This project incorporates HTML, CSS, JS, jQuery and AJAX front-end skills, and Node, Express and MongoDB back-end skills.
+Tweeter is a simple, single-page Twitter responsive clone where users are able to post messages of up to 140 characters. This project incorporates HTML, CSS, JS, jQuery and AJAX front-end skills, and Node, Express and MongoDB back-end skills.
 
 This repository is the starter code for the project: Students will fork and clone this repository, then build upon it to practice their HTML, CSS, JS, jQuery and AJAX front-end skills, and their Node, Express and MongoDB back-end skills.
 
 ## Screenshots
-!["Screenshot of entire page"](https://github.com/gabmor38/tweeter/blob/master/public/docs/tweets%20main.png?raw=true)
+!["Screenshot of entire page"](https://github.com/gabmor38/tweeter/blob/master/public/docs/Main.png?raw=true)
 
 !["Screenshot of tweeter box"](https://github.com/gabmor38/tweeter/blob/master/public/docs/Tweet-box.png?raw=true)
+
+!["Screenshot of responsive main](https://github.com/gabmor38/tweeter/blob/master/public/docs/Responsive_main.png?raw=true)
 
 ## Getting Started
 
