@@ -52,9 +52,6 @@ article.tweet header {
   
 }
 
-.moveLeft {
-  flex-basis: 75%;
-}
 
 article.tweet footer {
   display:flex;
